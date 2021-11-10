@@ -1,0 +1,23 @@
+# For relative file paths, you need to include the ../../../ prefix
+# in order to get to the folder containing the application bundle
+
+# input file path
+inpath: words.txt
+
+# output file path
+outpath: formR_setup.xlsx
+
+# number of steps on the Likert scale
+likertsize: 7
+
+# left Likert scale label
+llabel: trudno wyobrażalne
+
+# right Likert scale label
+rlabel: łatwo wyobrażalne
+
+# divide the displayed words into n pages
+dpages: 10
+
+# next page / go on label
+nextpage: Dalej

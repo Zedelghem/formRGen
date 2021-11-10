@@ -1,0 +1,1 @@
+python3 generatexsls.py config
