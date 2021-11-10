@@ -17,6 +17,7 @@ def split(a, n):
     n = min(n, len(a)) # don't create empty buckets
     k, m = divmod(len(a), n)
     return (a[i*k+min(i, m):(i+1)*k+min(i+1, m)] for i in range(n))
+
 def flatten(t):
     return [item for sublist in t for item in sublist]
 
@@ -77,6 +78,17 @@ columns[-1].insert(0, "type")
 
 # name column
 columns.append([[clean_diacr(word.lower()) for word in x] + ["page{}".format(ind+1)] for ind, x in enumerate(words_divided)])
+
+## Look for duplicates
+## Dirty, inefficient way; but shouldn't matter for the datasets we deal with
+if len(flatten(columns[-1])) != len(set(flatten(columns[-1]))):
+    for subind, sublist in enumerate(columns[-1]):
+        for ind, item in enumerate(sublist):
+            if flatten(columns[-1]).count(item) > 1:
+                # change the variable name tu include the subindex and index of the element
+                # for uniqueness
+                columns[-1][subind][ind] = "{}_{}_{}".format(str(subind), str(ind), item)
+
 columns[-1].insert(0,"name")
 
 # label column
