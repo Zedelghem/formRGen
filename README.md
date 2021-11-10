@@ -1,7 +1,7 @@
 # formRGen
 ## FormR Likert-Scale Survey Generator – For rapid preparation of norming surveys using formr.org
 
-A tiny script to rapidly create formR-compatible Excel files for the purpose of large-scale norming norming studies utilizing a simple Likert scale.
+A tiny script to rapidly create formR-compatible Excel files for the purpose of large-scale norming studies utilizing a simple Likert scale.
 
 To install the prerequisites run ```pip3 install --user XlsxWriter```.
 
