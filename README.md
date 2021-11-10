@@ -5,7 +5,7 @@ A tiny script to rapidly create formR-compatible Excel files for the purpose of 
 
 To generate a file:
 1. Input your words or statements into a text file, separated with new lines. By default, it should be called ```words.txt``` and located in the same folder as the scripts.
-2. Adjust the config file to change the labels, pagination, output filename and path, etc.
+2. Adjust the ```config``` file to change the labels, pagination, output filename and path, etc.
 3. Run ```formRGen.sh```.
 
 Take a look at the config file for more information on what can be tinkered with.
