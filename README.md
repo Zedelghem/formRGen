@@ -3,6 +3,8 @@
 
 A tiny script to rapidly create formR-compatible Excel files for the purpose of large-scale norming norming studies utilizing a simple Likert scale.
 
+To install the prerequisites run ```pip3 install --user XlsxWriter```.
+
 To generate a file:
 1. Input your words or statements into a text file, separated with new lines. By default, it should be called ```words.txt``` and located in the same folder as the scripts.
 2. Adjust the ```config``` file to change the labels, pagination, output filename and path, etc.
