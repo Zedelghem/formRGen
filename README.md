@@ -3,6 +3,8 @@
 
 A tiny script to rapidly create formR-compatible Excel files for the purpose of large-scale norming studies utilizing a simple Likert scale.
 
+![We want to get from this](before.png) ![...to this](after.png)
+
 To install the prerequisites run ```pip3 install --user XlsxWriter```.
 
 To generate a file:
